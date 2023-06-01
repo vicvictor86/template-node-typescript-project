@@ -5,7 +5,8 @@
   "author": "vicvictor86 <vicbem@hotmail.com>",
   "scripts": {
     "dev": "ts-node-dev --transpile-only -r tsconfig-paths/register --inspect --ignore-watch node_modules src/server/server.ts",
-    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
+    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+    "migration:run": "ts-node-dev ./node_modules/typeorm/cli.js migration:run -d src/model/database/dataSource.ts"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
