@@ -112,3 +112,6 @@ tmp/*
 
 #Configs
 config/
+
+#Database
+*.sqlite
