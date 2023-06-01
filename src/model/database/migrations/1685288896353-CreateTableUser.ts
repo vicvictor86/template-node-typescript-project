@@ -14,11 +14,6 @@ export class CreateTableUser1685288896353 implements MigrationInterface {
             default: 'uuid_generate_v4()',
           },
           {
-            name: 'real_name',
-            type: 'varchar',
-            isNullable: false,
-          },
-          {
             name: 'username',
             type: 'varchar',
             isNullable: false,
@@ -32,21 +27,6 @@ export class CreateTableUser1685288896353 implements MigrationInterface {
             name: 'password',
             type: 'varchar',
             isNullable: false,
-          },
-          {
-            name: 'avatar',
-            type: 'varchar',
-            isNullable: true,
-          },
-          {
-            name: 'bio',
-            type: 'varchar',
-            isNullable: true,
-          },
-          {
-            name: 'is_admin',
-            type: 'boolean',
-            default: false,
           },
           {
             name: 'created_at',
