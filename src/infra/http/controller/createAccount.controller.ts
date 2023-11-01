@@ -3,8 +3,8 @@ import {
 } from '@nestjs/common';
 import { hash } from 'bcrypt';
 import { z } from 'zod';
-import { PrismaService } from '@/prisma/prisma.service';
-import { ZodValidationPipe } from '@/pipes/zodValidationPipe';
+import { PrismaService } from '@/database/prisma/prisma.service';
+import { ZodValidationPipe } from '../pipes/zodValidationPipe';
 
 const createAccountBodySchema = z.object({
   name: z.string(),
